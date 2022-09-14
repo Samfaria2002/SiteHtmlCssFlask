@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>UNA Design</title>
+
+	<!--Importados-->
+
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+	<link rel="sortcut icon" href="{{ url_for('static', filename='imagens/Iconeaba.png') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/fontawesome.min.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/regular.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/regular.min.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/solid.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/solid.min.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/brands.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/brands.min.css') }}">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+	<!--MetaSEO-->
+
+	<meta charset="utf-8">
+	<meta name="author" content="Gualberto Junio, Thiago Luan, Guilherme Miguel, Samuel Faria"/>
+	<meta name="keywords" content="webdesign, web, design, javascript html, css, python">
+	<meta name="Viewport" content='width=device-width,initial-scale=1.0,maximum-scale=1.0'>
+
+</head>
+<body>	
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href=""><h2>UNA.Projeto</h2></a>
+            </div>
+            <nav class="menu-desktop">
+                <ul>
+                    <li>
+                        <a target="_blank" href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="../static/sobre.html">Sobre</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="/blog">Blog</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="menu-mobile">
+                <h2><i class="fa fas fa-bars"></i></h2>
+                <ul>
+                    <li>
+                        <a target="_blank" href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="">Sobre</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="/blog">Blog</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="clear"></div>
+        </div> <!--Container-->
+    </header>
+
+    <section style="background-image: url(../static/imagens/imagemcapa2.jpg);" class="title-page">
+        <div class="overlay__title-page"></div>
+        <div class="container">
+            <h2>Sobre</h2>
+            <p>No universo do desenvolvimento web, diversas linguagens coexistem: HTML, a principal linguagem, de marcação; o JavaScript, 
+                para programar a lógica e o comportamento interativo em sites; e o tema deste artigo, o CSS (cascading style sheets, ou folhas 
+                de estilo em cascata). <br>
+                Aqui, você vai aprender um pouco sobre as linguagens mais comuns e principais para o Web Design com
+                exemplos funcionais e práticos! </p>
+        </div> <!--Container-->
+    </section>
+    
+    <section class="sobre__info">
+        <div class="container">
+            <div class="sobre__single_info">
+                <img src="../static/imagens/htmlexmp.png">
+                <h2>HTML</h2>
+                <p>HTML é a sigla para Hyper Text Markup Language, ou seja, linguagem de marcação de hipertexto. Ela é utilizada como marcação 
+                    para desenvolver páginas e documentos eletrônicos para a internet.
+
+                    Isso significa que ela garante a formatação ideal para sites. Porém, não pense que existe apenas esta linguagem de programação. 
+                    Há muitas outras, mas a HTML marca em hipertexto, criando uma estrutura básica. A CSS, por exemplo, é a responsável por formar 
+                    o estilo das páginas, como formatações de cores e formas.</p>
+                <p>A estrutura de um código feito em HTML é repleta de tags. Podemos pegar como exemplo o conteúdo de uma página.
+                    o título principal é marcado como < h1 > — o “H” representa “head”, ou seja, a cabeça, o topo do texto. Depois dele, 
+                    vem os demais: < h2 >, < h3 > e assim por diante. Isso não significa necessariamente o tamanho da fonte no visual da página, mas, 
+                    sim, a forma como os robôs de indexação os lerão.
+                    Por isso, o HTML é conhecido como uma linguagem de marcação, porque prioriza a hierarquia das informações e não o estilo — que pode ser modificado no CSS.
+                </p>
+                <p style="width: 100%;">
+                    A imagem acima representa a marcação de um código em HTML de uma página de login. Usamos a tag < form > para criar o corpo do formulário e colocamos algumas < div > para realizar 
+                    a separação dos componentes do formulário. Dentro das < div >, colocamos a tag < input > para a entrada de dados e < label > para dar nome aos < input >. Enfim, terminamos com a tag < button > para 
+                    adicionar um botão clicavel a fim de enviar os dados. Confira aqui o formulário de login da imagem e um adicional para contato, ambos em HTML: <a target="_blank" href="../static/projetologin/templates/indexlogin.html">Formulário de Login</a>, <a target="_blank" href="../static/projetologin/templates/indexcontato.html">Formulário de Contato</a>.
+                </p>
+                <div class="clear"></div>
+            </div> <!--sobre__single_info-->
+        </div> <!--Container-->
+    </section>
+    
+    <section class="sobre__info">
+        <div class="container">
+            <div class="sobre__single_info">
+                <img src="../static/imagens/cssexmp1.png">
+                <h2>CSS</h2>
+                <p>CSS é uma linguagem de estilo, também conhecida como Cascade Style Sheet ou folhas de estilo em cascata. É usada para personalização visual de um site. 
+                    Ou seja, elas servem para otimizar o conteúdo das páginas e permitir uma apresentação mais amigável para o usuário.
+                    O CSS é uma linguagem de estilo que permite diversas configurações para otimizar os sites visualmente.
+                    Por essa razão, o CSS complementa o HTML, que tem como função apenas a estruturação e marcação dos principais componentes das 
+                    páginas. Nesse sentido, para entender CSS, é preciso saber HTML.
+                </p>
+                <p>
+                    O HTML cria a ordem dos elementos e a forma básica, como um esqueleto, e o CSS é o que deixa o website visualmente atraente, como o corpo e as roupas que vestimos.
+                    O CSS é uma linguagem limpa e simples. Além de ser organizada sempre com seletores, propriedades e valores, a tecnologia permite que os 
+                    programadores compreendam facilmente o que está sendo feito. O requisito inicial é conhecer um pouco de inglês para saber do que se tratam os comandos, 
+                    assim como o HTML.
+                </p>
+                <p style="width: 100%;">
+                    Vamos pegar um comando simples para usar como exemplo a imagem acima: “body {background-color: white;}”. Nesse caso, o body é o seletor, que indica que estamos trabalhando com todo o corpo 
+                    da página. A propriedade “background-color” mostra que eu quero mudar a cor do plano de fundo, já o “white” estabelece o valor, que é branco. <br> Ao salvar 
+                     isso e conectar essas configurações a arquivos HTML, o meu plano de fundo estara branco. Também usamos a propriedade "font-family" que nos permite alterar o tipo de 
+                     fonte usado no texto; o "font-size" denota o tamanho do nosso texto; "color" nos permite alterar a cor de algum elemento e etc.
+                     A imagem acima representa o arquivo CSS usado para personalizar o formulário de contato que vimos antes.
+                </p>
+                <div class="clear"></div>
+            </div> <!--sobre__single_info-->
+        </div> <!--Container-->
+    </section>
+
+    <section class="sobre__info">
+        <div class="container">
+            <div class="sobre__single_info">
+                <img src="../static/imagens/javascriptexmp.png">
+                <h2>JavaScript</h2>
+                <p>
+                    JavaScript é uma linguagem de programação criada para ser executada em navegadores e manipular comportamentos de páginas web.
+                    É uma das mais importantes tecnologias voltadas para o front-end e, unindo-se a dupla HTML e CSS, formam um grupo de linguagens 
+                    que abrangem praticamente todas as exigências do desenvolvimento de uma página completa, dinâmica e com boa performance.
+                    Com o JavaScript, é possível criar páginas dinâmicas e sites interativos e que dê respostas rápidas das interações do usuário, como criar gráficos, ferramentas e 
+                    outros elementos. 
+                </p>
+                <p>
+                    Com o popular ambiente de execução Node.js, o JavaScript finalmente conseguiu ter a possibilidade de ser utilizado no back-end. Com isso, a criação 
+                    de plataformas e sistemas de armazenamento de informações para redes sociais e sites de notícias são algumas 
+                    das mais populares aplicações de JS em back-end. 0 desenvolvimento de jogos também está entre as utilidades do JavaScript.
+                    Graças à versatilidade desta linguagem, esta prática cresceu muito nos últimos anos. Um dos mais populares frameworks para o desenvolvimento de games é o Phaser, onde 
+                    jogos completos podem ser criados apenas com HTML, CSS e JS.
+                </p>
+                <p style="width: 100%;">
+                    Com o JavaScript, podemos criar diversas ferramentas em nossos projetos, um exemplo pode ser a imagem acima; temos um código que nos permite adicionar um relógio rodando em 
+                    tempo real: 
+                </p>
+                <script  type="text/javascript">
+                    function startTime()
+                    {
+                    var today=new Date();
+                    var h=today.getHours();
+                    var m=today.getMinutes();
+                    var s=today.getSeconds();
+                    // add a zero in front of numbers<10
+                    m=checkTime(m);
+                    s=checkTime(s);
+                    document.getElementById('txt').innerHTML=h+":"+m+":"+s;
+                    t=setTimeout('startTime()',500);
+                    
+                    }
+                    
+                    function checkTime(i)
+                    {
+                    if (i<10)
+                    {
+                    i="0" + i;
+                    }
+                    return i;
+                    }
+                    </script>
+                    
+                    
+                    <div id="txt">
+                    <script type="text/javascript">document.write(startTime())</script>
+                    </div>
+                <div class="clear"></div>
+            </div> <!--sobre__single_info-->
+        </div> <!--Container-->
+    </section>
+
+    <section class="sobre-equipe">
+        <div class="container">
+        <div class="equipe-container">
+            <div class="line-text">
+                <div style="width: 70px;"></div>
+                <h2>Equipe</h2>
+            </div>
+            <marquee direction="up">
+                <div class="avatar-box">
+                    <div style="background-image: url('static/imagens/imagemcapa2.jpg')" class="img-avatar"></div><div class="descricao-avatar">
+                        <h3>Gualberto Junio</h3>
+                        <p>Aluno no Centro Universitário UNA/Tecnologia da Informação</p>
+                    </div>
+                </div> <!--Avatar Box-->
+
+                <div class="avatar-box">
+                    <div style="background-image: url('static/imagens/imagemcapa2.jpg')" class="img-avatar"></div><div class="descricao-avatar">
+                        <h3>Thiago Luan</h3>
+                        <p>Aluno no Centro Universitário UNA/Tecnologia da Informação</p>
+                    </div>
+                </div> <!--Avatar Box-->
+
+                <div class="avatar-box">
+                    <div style="background-image: url('static/imagens/imagemcapa2.jpg')" class="img-avatar"></div><div class="descricao-avatar">
+                        <h3>Guilherme Miguel</h3>
+                        <p>Aluno no Centro Universitário UNA/Tecnologia da Informação</p>
+                    </div>
+                </div> <!--Avatar Box-->
+
+                <div class="avatar-box">
+                    <div style="background-image: url('static/imagens/imagemcapa2.jpg')" class="img-avatar"></div><div class="descricao-avatar">
+                        <h3>Samuel Faria</h3>
+                        <p>Aluno no Centro Universitário UNA/Tecnologia da Informação</p>
+                    </div>
+                </div> <!--Avatar Box-->
+
+            </marquee>
+        </div>  <!--Equipe container-->
+
+        <div class="sobre-container">
+            <div class="line-text">
+                <div style="width: 70px;"></div>
+                <h2>Sobre</h2>
+                <p>
+                    Bem-vindo ao nosso site criado para o projeto final da universidade UNA para os cursos das áreas da tecnologia da 
+                    informação! Resolvemos criar um site sobre Web Design, mostrando e dando algumas observações acerca das tecnologias 
+                    mais usadas no meio dos Web Designers, como o HTML, o CSS e softwares como o Photoshop.
+                </p>
+                <p>
+                    Foi um projeto muito produtivo e divertido de se criar pois todos os membros do grupo aprenderam bastante, além de ajudar 
+                    a criar boas amizades. Mesmo com algumas inexperiências na área da programação, nós ajudamos uns aos outros, o que tornou tudo 
+                    muito menos complicado e mais tranquilo.
+                </p>
+            </div>
+        </div> <!--Sobre container-->
+        <div class="clear"></div>
+        
+
+        </div>  <!--Container-->
+    </section> <!--Sobre container-->
+
+    <section class="inscricao">
+        <div class="container">
+
+            <div class="w50 center">
+                <h2 class="inscricao-texto"><i class="fas fa-bullhorn"></i>Inscreva-se na nossa lista!</h2>
+            </div>
+
+            <div class="w50 center">
+                <form method="post" class="inscricao-form">
+                    <p><label>name:</label></p>
+                    <input type="text" name="name" id="name">
+                    <p><label>email:</label></p>
+                    <input type="text" name="email" id="email">
+                    <input class="inscricao-submit" type="submit" name="acao" value="Enviar">
+                </form>
+            </div>
+
+            <div class="clear"></div>
+            <p class="list_conf" style="padding-left: 130px;">
+                <a href="/lista">
+                    <i class="home"></i> Clique aqui para conferir a lista
+                </a>
+            </p>
+        </div>
+    </section>
+
+    <section class="cards">
+        <div class="container">
+            <div class="card-single">
+                <img src="static/imagens/imghtml.jpeg" alt="" title="" />
+                <h3>HTML</h3>
+                <p>Ao trabalhar com HTML simplesmente codificamos estruturas (tags e atributos) para marcar a página de um site.</p>
+            </div>
+
+            <div class="card-single">
+                <img src="static/imagens/imgcss.jpg" alt="" title="" />
+                <h3>CSS</h3>
+                <p>Utilizando o CSS é possível alterar a cor do texto e do fundo, fonte e espaçamento entre parágrafos.</p>
+            </div>
+
+            <div class="card-single">
+                <img src="static/imagens/imgjs.png" alt="" title="" />
+                <h3>JavaScript</h3>
+                <p>Com o JavaScript incluir elementos como mapas, formulários, animações e muito mais.</p>
+            </div>
+
+            <div class="clear"></div>
+        </div>
+    </section>
+
+    <footer class="footer1">
+        <div class="container">
+            <div class="w33">
+                <h2>Aonde estamos?</h2>
+                <p><i class="fas fa-phone-alt"></i> (31) 4005-9163</p>
+                <p><i class="fas fa-map-marked-alt"></i> Av Maria Da Gloria Rocha, 175</p>
+            </div>
+
+            <div class="w33">
+                <h2>Links Úteis</h2>
+                <p><a href="https://www.google.com/"><i class="fab fa-google"></i> Google</a></p>
+                <p><a href="https://fontawesome.com/"><i class="fab fa-font-awesome-flag"></i> Font Awesome</a></p>
+                <p><a href="https://www.w3schools.com/"><i class="fas fa-code"></i> W3Schools</a></p>
+            </div>
+
+            <div class="w33">
+                <h2>Conecte-se conosco!</h2>
+                <p><a href="https://twitter.com/"><i class="fab fa-twitter"></i> Twitter</a></p>
+                <p><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i> Instagram</a></p>
+                <p><a href="../static/projetologin/templates/indexcontato.html">Formulário para contato!</a></p>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </footer>
+
+    <footer class="footer2">
+        <div class="container">
+            <p><i class="fas fa-project-diagram"></i> Projeto Final UNA</p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $('nav.menu-mobile h2').click(function(){
+            $('nav.menu-mobile ul').slideToggle();
+        });
+    </script>
+
+
+</body>
+</html>
+
+<h3></h3><!-- Start BawkBox Code--><script data-sil-id="60b2ead208a60f001e780769">
+var loadWidget = function() { var d = document, w = window,
+ l = window.location,p = l.protocol == "file:" ? "http://" : "//"; if (!w.WS) w.WS = {};
+ c = w.WS; var m=function(t, o){ var e = d.getElementsByTagName("script");
+  e=e[e.length-1]; var n = d.createElement(t); if (t=="script") {n.async=true;}
+  for (k in o) n[k] = o[k]; e.parentNode.insertBefore(n, e)}; m("script",
+  { src: p + "bawkbox.com/widget/feedback/60b2ead208a60f001e780769?page=" +encodeURIComponent(l+''),
+   type: 'text/javascript' }); c.load_net = m; }; if(window.Squarespace){ document.addEventListener('DOMContentLoaded', loadWidget);
+    setTimeOut(function(){ document.addEventListener('DOMContentLoaded', loadWidget); }, 3000) } else { loadWidget() }
+</script><div class="sil-widget-feedback sil-widget" id="sil-widget-60b2ead208a60f001e780769"><a href="//bawkbox.com/install/feedback"></a></div><!-- End BawkBox Code-->

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>UNA Design</title>
+
+	<!--Importados-->
+
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+	<link rel="sortcut icon" href="{{ url_for('static', filename='imagens/Iconeaba.png') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/fontawesome.min.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/regular.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/regular.min.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/solid.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/solid.min.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/brands.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/brands.min.css') }}">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    
+    <!--MetaSEO-->
+
+	<meta charset="utf-8">
+	<meta name="author" content="Gualberto Junio, Thiago Luan, Guilherme Miguel, Samuel Faria"/>
+	<meta name="keywords" content="webdesign, web, design, javascript html, css, python">
+	<meta name="Viewport" content='width=device-width,initial-scale=1.0,maximum-scale=1.0'>
+
+</head>
+<body>	
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href=""><h2>UNA.Projeto</h2></a>
+            </div>
+            <nav class="menu-desktop">
+                <ul>
+                    <li>
+                        <a target="_blank" href="">Home</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="/sobre">Sobre</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="/blog">Blog</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="menu-mobile">
+                <h2><i class="fa fas fa-bars"></i></h2>
+                <ul>
+                    <li>
+                        <a target="_blank" href="">Home</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="/sobre">Sobre</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="/blog">Blog</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="clear"></div>
+        </div> <!--Container-->
+    </header>
+
+    <section style="background-image: url(../static/imagens/imagemcapa7.jpg);" class="title-page">
+        <div class="overlay__title-page"></div>
+        <div class="container">
+            <h2>Blog</h2>
+            <p>Confira nossos artigos exclusivos sobre os mais variados temas sobre o mundo das tecnologias.</p>
+        </div> <!--Container-->
+    </section>
+    
+    <section>
+        <div class="container">
+            <h1 style="padding: 40px 40px 20px 40px; border-bottom: 3px solid #EEE;">Últimos Lançamentos!</h1>
+            <div class="card">
+                <img src="../static/imagens/artigo1img.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Extensões essenciais do Visual Studio Code</h5>
+                <p class="card-text">Nesse artigo abordaremos algumas extensões mais recomendadas para seus projetos</p>
+                <a href="/artigo1" class="btn btn-primary">Confira!</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../static/imagens/linguagens.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Surgimento de algumas das principais linguagens de programação</h5>
+                <p class="card-text">Você sabe como surgiu algumas das principais e mais famosas linguagens de programação?</p>
+                <a href="/artigo2" class="btn btn-primary">Confira!</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../static/imagens/noteimg.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Notepad++</h5>
+                <p class="card-text">Confira um pouco sobre a ferramenta de edição de textos muito usada por desenvolvedores, o Notepad++</p>
+                <a href="/artigo3" class="btn btn-primary">Confira!</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../static/imagens/imguxui.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">UX e UI</h5>
+                <p class="card-text">No meio do desenvolvimento web, temos dois tipos de profissionais, o UX e o UI. Você sabe o que são eles?</p>
+                <a href="/artigo4" class="btn btn-primary">Confira!</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <section>
+        <div class="container">
+            <ul class="lista__artigos">
+                <h1>Confira nossos artigos</h1>
+                <li class="lista-single-artigos">
+                    <i style="color: #52ccc3; font-size: 30px;" class="fas fa-desktop"></i>
+                    <div class="text-artigo">
+                        <h3 class="titulo-artigo">
+                            <a href="/artigo1">Extensões essenciais do Visual Studio Code</a>
+                        </h3>
+                        <p>Nesse artigo abordaremos algumas extensões mais recomendadas para seus projetos
+                        </p>
+                    </div>
+                    <div class="clear"></div>
+                </li>
+
+                <li class="lista-single-artigos">
+                    <i style="color: #52ccc3; font-size: 30px;" class="fas fa-desktop"></i>
+                    <div class="text-artigo">
+                        <h3 class="titulo-artigo">
+                            <a href="/artigo2">Surgimento de algumas das principais linguagens de programação</a>
+                        </h3>
+                        <p>Você sabe como surgiu algumas das principais e mais famosas linguagens de programação?
+                        </p>
+                    </div>
+                    <div class="clear"></div>
+                </li>
+
+                <li class="lista-single-artigos">
+                    <i style="color: #52ccc3; font-size: 30px;" class="fas fa-desktop"></i>
+                    <div class="text-artigo">
+                        <h3 class="titulo-artigo">
+                            <a href="/artigo3">Notepad++</a>
+                        </h3>
+                        <p>Confira um pouco sobre a ferramenta de edição de textos muito usada por desenvolvedores, o Notepad++
+                        </p>
+                    </div>
+                    <div class="clear"></div>
+                </li>
+
+                <li class="lista-single-artigos">
+                    <i style="color: #52ccc3; font-size: 30px;" class="fas fa-desktop"></i>
+                    <div class="text-artigo">
+                        <h3 class="titulo-artigo">
+                            <a href="/artigo4">UX e UI</a>
+                        </h3>
+                        <p>No meio do desenvolvimento web, temos dois tipos de profissionais, o UX e o UI. Você sabe o que são eles?
+                        </p>
+                    </div>
+                    <div class="clear"></div>
+                </li>
+
+               
+            </ul> <!--lista__artigos-->
+        </div> <!--Container-->
+    </section>
+
+    <section class="sobre-equipe">
+        <div class="container">
+        <div class="equipe-container">
+            <div class="line-text">
+                <div style="width: 70px;"></div>
+                <h2>Equipe</h2>
+            </div>
+            <marquee direction="up">
+                <div class="avatar-box">
+                    <div style="background-image: url('static/imagens/imagemcapa2.jpg')" class="img-avatar"></div><div class="descricao-avatar">
+                        <h3>Gualberto Junio</h3>
+                        <p>Aluno no Centro Universitário UNA/Tecnologia da Informação</p>
+                    </div>
+                </div> <!--Avatar Box-->
+
+                <div class="avatar-box">
+                    <div style="background-image: url('static/imagens/imagemcapa2.jpg')" class="img-avatar"></div><div class="descricao-avatar">
+                        <h3>Thiago Luan</h3>
+                        <p>Aluno no Centro Universitário UNA/Tecnologia da Informação</p>
+                    </div>
+                </div> <!--Avatar Box-->
+
+                <div class="avatar-box">
+                    <div style="background-image: url('static/imagens/imagemcapa2.jpg')" class="img-avatar"></div><div class="descricao-avatar">
+                        <h3>Guilherme Miguel</h3>
+                        <p>Aluno no Centro Universitário UNA/Tecnologia da Informação</p>
+                    </div>
+                </div> <!--Avatar Box-->
+
+                <div class="avatar-box">
+                    <div style="background-image: url('static/imagens/imagemcapa2.jpg')" class="img-avatar"></div><div class="descricao-avatar">
+                        <h3>Samuel Faria</h3>
+                        <p>Aluno no Centro Universitário UNA/Tecnologia da Informação</p>
+                    </div>
+                </div> <!--Avatar Box-->
+
+            </marquee>
+        </div>  <!--Equipe container-->
+
+        <div class="sobre-container">
+            <div class="line-text">
+                <div style="width: 70px;"></div>
+                <h2>Sobre</h2>
+                <p>
+                    Bem-vindo ao nosso site criado para o projeto final da universidade UNA para os cursos das áreas da tecnologia da 
+                    informação! Resolvemos criar um site sobre Web Design, mostrando e dando algumas observações acerca das tecnologias 
+                    mais usadas no meio dos Web Designers, como o HTML, o CSS e softwares como o Photoshop.
+                </p>
+                <p>
+                    Foi um projeto muito produtivo e divertido de se criar pois todos os membros do grupo aprenderam bastante, além de ajudar 
+                    a criar boas amizades. Mesmo com algumas inexperiências na área da programação, nós ajudamos uns aos outros, o que tornou tudo 
+                    muito menos complicado e mais tranquilo.
+                </p>
+            </div>
+        </div> <!--Sobre container-->
+        <div class="clear"></div>
+        
+
+        </div>  <!--Container-->
+    </section> <!--Sobre container-->
+
+    <section class="inscricao">
+        <div class="container">
+
+            <div class="w50 center">
+                <h2 class="inscricao-texto"><i class="fas fa-bullhorn"></i>Inscreva-se na nossa lista!</h2>
+            </div>
+
+            <div class="w50 center">
+                <form method="post" class="inscricao-form">
+                    <p><label>name:</label></p>
+                    <input type="text" name="name" id="name">
+                    <p><label>email:</label></p>
+                    <input type="text" name="email" id="email">
+                    <input class="inscricao-submit" type="submit" name="acao" value="Enviar">
+                </form>
+            </div>
+
+            <div class="clear"></div>
+            <p class="list_conf" style="padding-left: 130px;">
+                <a href="/lista">
+                    <i class="home"></i> Clique aqui para conferir a lista
+                </a>
+            </p>
+        </div>
+    </section>
+
+    <section class="cards">
+        <div class="container">
+            <div class="card-single">
+                <img src="static/imagens/imghtml.jpeg" alt="" title="" />
+                <h3>HTML</h3>
+                <p>Ao trabalhar com HTML simplesmente codificamos estruturas (tags e atributos) para marcar a página de um site.</p>
+            </div>
+
+            <div class="card-single">
+                <img src="static/imagens/imgcss.jpg" alt="" title="" />
+                <h3>CSS</h3>
+                <p>Utilizando o CSS é possível alterar a cor do texto e do fundo, fonte e espaçamento entre parágrafos.</p>
+            </div>
+
+            <div class="card-single">
+                <img src="static/imagens/imgjs.png" alt="" title="" />
+                <h3>JavaScript</h3>
+                <p>Com o JavaScript incluir elementos como mapas, formulários, animações e muito mais.</p>
+            </div>
+
+            <div class="clear"></div>
+        </div>
+    </section>
+    
+    <footer class="footer1">
+        <div class="container">
+            <div class="w33">
+                <h2>Aonde estamos?</h2>
+                <p><i class="fas fa-phone-alt"></i> (31) 4005-9163</p>
+                <p><i class="fas fa-map-marked-alt"></i> Av Maria Da Gloria Rocha, 175</p>
+            </div>
+
+            <div class="w33">
+                <h2>Links Úteis</h2>
+                <p><a href="https://www.google.com/"><i class="fab fa-google"></i> Google</a></p>
+                <p><a href="https://fontawesome.com/"><i class="fab fa-font-awesome-flag"></i> Font Awesome</a></p>
+                <p><a href="https://www.w3schools.com/"><i class="fas fa-code"></i> W3Schools</a></p>
+            </div>
+
+            <div class="w33">
+                <h2>Conecte-se conosco!</h2>
+                <p><a href="https://twitter.com/"><i class="fab fa-twitter"></i> Twitter</a></p>
+                <p><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i> Instagram</a></p>
+                <p><a href="../static/projetologin/templates/indexcontato.html">Formulário para contato!</a></p>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </footer>
+
+    <footer class="footer2">
+        <div class="container">
+            <p><i class="fas fa-project-diagram"></i> Projeto Final UNA</p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $('nav.menu-mobile h2').click(function(){
+            $('nav.menu-mobile ul').slideToggle();
+        });
+    </script>
+
+
+</body>
+</html>
+
+<h3></h3><!-- Start BawkBox Code--><script data-sil-id="60b2ead208a60f001e780769">
+var loadWidget = function() { var d = document, w = window,
+ l = window.location,p = l.protocol == "file:" ? "http://" : "//"; if (!w.WS) w.WS = {};
+ c = w.WS; var m=function(t, o){ var e = d.getElementsByTagName("script");
+  e=e[e.length-1]; var n = d.createElement(t); if (t=="script") {n.async=true;}
+  for (k in o) n[k] = o[k]; e.parentNode.insertBefore(n, e)}; m("script",
+  { src: p + "bawkbox.com/widget/feedback/60b2ead208a60f001e780769?page=" +encodeURIComponent(l+''),
+   type: 'text/javascript' }); c.load_net = m; }; if(window.Squarespace){ document.addEventListener('DOMContentLoaded', loadWidget);
+    setTimeOut(function(){ document.addEventListener('DOMContentLoaded', loadWidget); }, 3000) } else { loadWidget() }
+</script><div class="sil-widget-feedback sil-widget" id="sil-widget-60b2ead208a60f001e780769"><a href="//bawkbox.com/install/feedback"></a></div><!-- End BawkBox Code-->
